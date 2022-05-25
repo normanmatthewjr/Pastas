@@ -1,6 +1,23 @@
-h1 {background-color: blue;
-
+h1 {
+    background-color: rgb(41, 41, 129);
+    border-style:inset;
+    color:blanchedalmond;
+    border: 20px;
+    margin: 20px;
+    padding: 20px;
 }
+
+nav {
+    background-color: rgb(247, 192, 192);
+    text-align: center;
+    border: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
 body {
     background-color: aqua;
+    border: 20px;
+    margin: 20px;
+    padding: 20px;
 }
