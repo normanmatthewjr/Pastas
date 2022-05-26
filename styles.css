@@ -12,12 +12,19 @@ nav {
     font-size: 20px;
     border: 0px;
     margin: 0px;
-    padding: 20px;
+    padding: 10px;
+  
 }
 
 nav a {
-    
-    padding: 3px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(241, 241, 192);
+    color:rgb(98, 173, 238);
+    margin: 0px;
+    padding: 10px;
 }
 
 body {
@@ -40,5 +47,6 @@ p {
 }
 
 footer {
+  
     text-align: center;
 }
