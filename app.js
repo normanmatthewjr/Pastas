@@ -1,9 +1,9 @@
 let userName = prompt("What is your name?");
 console.log(userName);
-document.write("Hello " + userName + ", welcome to our favorite Italian pastas page.");
-
+document.write("Hello " + userName);
 
 function myFunction() {
-  confirm("Confirm Answer");
+  confirm("Confirm if it's the best");
+  
 }
 
