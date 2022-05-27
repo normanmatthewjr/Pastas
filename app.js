@@ -3,7 +3,8 @@ console.log(userName);
 document.write("Hello " + userName);
 
 function myFunction() {
-  confirm("Confirm if it's the best");
+  
+  confirm("Click OK if your positive POSITIVE");
   
 }
 
