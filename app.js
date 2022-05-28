@@ -12,7 +12,6 @@ function yourName() {
   }
 }
 
-
 function getPasta() {
     var x = document.getElementById("myText").value;
     document.getElementById("demo").innerHTML = x;
@@ -21,5 +20,11 @@ function getPasta() {
 
 function myFan() {
   confirm("Click OK if you're a fan of Italian pastas");
+  if (confirm = true) {
+    message = 'Congratulation! You are ONE OF US!';
   }
+  else (confirm = false) {
+    message = 'Its OK not everyone can be perfect';
+  }
+}
 
