@@ -19,12 +19,12 @@ function getPasta() {
 }
 
 function myFan() {
-  confirm("Click OK if you're a fan of Italian pastas");
-  if (confirm = true) {
-    message = 'Congratulation! You are ONE OF US!';
+  let x = confirm("Click OK if you're a fan of Italian pastas");
+  if (x = 'true') {
+    message = 'Congratulation You are ONE OF US!';
   }
-  else (confirm = false) {
-    message = 'Its OK not everyone can be perfect';
+  else {
+    message = 'Nobodys perfect';
   }
 }
 
