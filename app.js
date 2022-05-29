@@ -1,8 +1,10 @@
+let userName = "";
+
 function yourName() {
-  let name;
-      name = prompt('What is your name?');
-      console.log(name);
-  return document.write("Hello" + name);
+ 
+      userName = prompt('What is your name?');
+      console.log(userName);
+  return document.write("Hello " + userName);
 }
 
  function ratePage(){
@@ -15,16 +17,17 @@ function yourName() {
 function getPasta() {
     var x = document.getElementById("myText").value;
     document.getElementById("demo").innerHTML = x;
-    alert("I see you like" + "demo");
+    alert("I see you like");
 }
 
 function myFan() {
-  let x = confirm("Click OK if you're a fan of Italian pastas");
-  if (x = 'true') {
-    message = 'Congratulation You are ONE OF US!';
+  let fanText;
+  if (confirm("Click OK for more pastas") == true) {
+    fanText = "Congratulations " + userName + ", you are ONE OF US!";
   }
   else {
-    message = 'Nobodys perfect';
+    fanText = "Its ok, nobody is perfect";
   }
+  document.getElementById("pastaFanText").innerHTML = fanText;
 }
 
