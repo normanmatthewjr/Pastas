@@ -16,7 +16,7 @@ function yourName() {
     alert(message);
   }
   else if (userRating == 4) {
-    message = "GREAT! 4 stars for a beginner? Thank you " + userName + "; there is still more to learn";
+    message = "GREAT! 4 stars for a beginner? Thank you " + userName + "; there is still more to learn.";
     alert(message);
   }
   else if (userRating == 3) {
@@ -28,7 +28,7 @@ function yourName() {
     alert(message);
   }  
   else if (userRating == 1) {
-    message = "Excellent! Going UP for here forward. Just need a little help, different strategy, and determination. Thank you.";
+    message = "Excellent! Everything is looking up from here forward. Just need a little help, different strategy, and determination. Thank you.";
     alert (message);
   }   
   else {
@@ -50,9 +50,12 @@ function getPasta() {
 function myFan() {
   if (confirm("Click OK for more pastas") == true) {
     fanText = "Congratulations " + userName + ", you are ONE OF US!";
+    alert(fanText);
   }
   else {
     fanText = "Its ok, nobody is perfect";
+    alert(fanText);
+    myFan();
   }
   document.getElementById("pastaFanText").innerHTML = fanText;
 }
