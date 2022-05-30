@@ -1,10 +1,8 @@
 let userName = "";
 let fanText = "";
-let colour = "";
 
 function yourName() {
       userName = prompt('What is your name?');
-      console.log(userName);
   return document.write("Hello " + userName);
 }
 
@@ -42,13 +40,14 @@ function yourName() {
   }
 }
 
-function update_background() {
-  const colour = prompt("Type white to change background to white");
-  document.body.style.backgroundColor=colour;
-  while (colour != "white") {
-    colour == "";
-
+function updatebackground() {
+  let color = prompt("Type white to change background color to white");
+  // var newColor = ["white" && "yellow" && "green"];
+  while (color != "white" || "yellow") {
+    alert ("Not a valid selection. Try white, yellow, or green"); 
+    break;
   }
+    document.body.style.backgroundColor = color;
 }
 
 function getPasta() {
