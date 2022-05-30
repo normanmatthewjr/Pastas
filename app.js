@@ -1,5 +1,6 @@
 let userName = "";
 let fanText = "";
+let colour = "";
 
 function yourName() {
       userName = prompt('What is your name?');
@@ -12,7 +13,7 @@ function yourName() {
   let message = "";
  
   if (userRating == 5) {
-    message = "WOW 5 star?!, Thank you " + userName + " you are AWESOME! Not going to stop improving though.";
+    message = "WOW 5 star?!, Thank you " + userName + " you are AWESOME! Not going to stop improving.";
     alert(message);
   }
   else if (userRating == 4) {
@@ -41,10 +42,19 @@ function yourName() {
   }
 }
 
+function update_background() {
+  const colour = prompt("Type white to change background to white");
+  document.body.style.backgroundColor=colour;
+  while (colour != "white") {
+    colour == "";
+
+  }
+}
+
 function getPasta() {
     var x = document.getElementById("myText").value;
-    document.getElementById("demo").innerHTML = x;
-    alert("I see you like" + x);
+    document.getElementById("getPastaText").innerHTML = ("So you like " + x + ". my favorite is spaghetti");
+    alert("I see you typed " + x);
 }
 
 function myFan() {
