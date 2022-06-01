@@ -27,11 +27,11 @@ function yourName() {
     alert(message);
   }  
   else if (userRating == 1) {
-    message = "Excellent! Everything is looking up from here forward. Just need a little help, different strategy, and determination. Thank you.";
+    message = "Excellent! Everything is looking up from here on. Just need a little help, different strategy, and determination. Thank you.";
     alert (message);
   }   
   else {
-    message = "Not a valid entry";
+    message = "Not a valid entry.";
     alert(message);
   }
 
@@ -41,19 +41,24 @@ function yourName() {
 }
 
 function updatebackground() {
-  let color = prompt("Type white to change background color to white");
-  // var newColor = ["white" && "yellow" && "green"];
-  while (color != "white" || "yellow") {
-    alert ("Not a valid selection. Try white, yellow, or green"); 
-    break;
-  }
+  let color = prompt("Type either white, yellow, or green to change background.");
+  if (color == "white" || color == "yellow" || color == "green") {
+    alert ("You've selected the color " + color + ". Let see how it looks."); 
     document.body.style.backgroundColor = color;
+  }
+  else {
+    colorText = "That's not one of the selections."
+    alert(colorText); 
+    updatebackground();
+  }
+  // If I try to add "color + 'text' " it returns else statement color instead of if. For example if I entered blue, and then white it returns blue.
+  document.getElementById("colorSelect").innerHTML = "Try a different color.";
 }
 
 function getPasta() {
     var x = document.getElementById("myText").value;
     document.getElementById("getPastaText").innerHTML = ("So you like " + x + ". my favorite is spaghetti");
-    alert("I see you typed " + x);
+    alert("I see you entered " + x);
 }
 
 function myFan() {
