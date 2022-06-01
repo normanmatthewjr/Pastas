@@ -40,19 +40,45 @@ function yourName() {
   }
 }
 
+// function updatebackground() {
+//   let color = prompt("Type either white, yellow, or green to change background.");
+//   if (color == "white" || color == "yellow" || color == "green") {
+//     alert ("You've selected the color " + color + ". Let see how it looks."); 
+//     document.body.style.backgroundColor = color;
+//   }
+//   else {
+//     colorText = "That's not one of the selections."
+//     alert(colorText); 
+//     updatebackground();
+//   }
+//   // If I try to add "color + 'text' " it returns else statement color instead of if. For example if I entered blue, and then white it returns blue.
+//   document.getElementById("colorSelect").innerHTML = "Try a different color.";
+// }
+
+
+// does not work properly yet. copied Ari's while loop.
 function updatebackground() {
-  let color = prompt("Type either white, yellow, or green to change background.");
-  if (color == "white" || color == "yellow" || color == "green") {
-    alert ("You've selected the color " + color + ". Let see how it looks."); 
-    document.body.style.backgroundColor = color;
+  let didntselectcolor = true;
+  let yourcolor = prompt("Type either white, yellow, or green to change background.");
+    while(didntselectcolor){
+      if (yourcolor == "white"){
+        didntselectcolor = false;
+      }
+      else if (yourcolor == "yellow") {
+        didntselectcolor = false;
+      }
+      else if (yourcolor == "green") {
+        didntselectcolor = false;
+      }
+      else {
+        alert("Sorry that was not one of the choices! Please try again.");
+        yourcolor == "";
+        updatebackground();
+      }
+    alert ("You've selected the color " + yourcolor + ". Let see how it looks."); 
+      document.body.style.backgroundColor = yourcolor;
+    
   }
-  else {
-    colorText = "That's not one of the selections."
-    alert(colorText); 
-    updatebackground();
-  }
-  // If I try to add "color + 'text' " it returns else statement color instead of if. For example if I entered blue, and then white it returns blue.
-  document.getElementById("colorSelect").innerHTML = "Try a different color.";
 }
 
 function getPasta() {
