@@ -58,27 +58,25 @@ function yourName() {
 
 // does not work properly yet. copied Ari's while loop.
 function updatebackground() {
-  let didntselectcolor = true;
+  let selectcolor = true;
   let yourcolor = prompt("Type either white, yellow, or green to change background.");
-    while(didntselectcolor){
+    while(selectcolor){
       if (yourcolor == "white"){
-        didntselectcolor = false;
+        selectcolor = false;
       }
       else if (yourcolor == "yellow") {
-        didntselectcolor = false;
+        selectcolor = false;
       }
       else if (yourcolor == "green") {
-        didntselectcolor = false;
+        selectcolor = false;
       }
       else {
         alert("Sorry that was not one of the choices! Please try again.");
-        yourcolor == "";
-        updatebackground();
+        yourcolor = prompt("Type either white, yellow, or green to change background.");
       }
-    alert ("You've selected the color " + yourcolor + ". Let see how it looks."); 
-      document.body.style.backgroundColor = yourcolor;
-    
   }
+      alert ("You've selected the color " + yourcolor + ". Let see how it looks."); 
+      document.body.style.backgroundColor = yourcolor;
 }
 
 function getPasta() {
